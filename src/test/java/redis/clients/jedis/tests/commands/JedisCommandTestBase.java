@@ -9,7 +9,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.ComparisonFailure;
 
-import redis.clients.jedis.HostAndPort;
+import redis.clients.host.HostAndPort;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.tests.HostAndPortUtil;
 import redis.clients.jedis.tests.JedisTestBase;

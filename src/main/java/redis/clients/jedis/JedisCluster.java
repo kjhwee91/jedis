@@ -1,5 +1,6 @@
 package redis.clients.jedis;
 
+import redis.clients.host.HostAndPort;
 import redis.clients.jedis.BinaryClient.LIST_POSITION;
 
 import java.util.List;

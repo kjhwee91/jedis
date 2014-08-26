@@ -3,7 +3,7 @@ package redis.clients.jedis.tests;
 import java.util.ArrayList;
 import java.util.List;
 
-import redis.clients.jedis.HostAndPort;
+import redis.clients.host.HostAndPort;
 import redis.clients.jedis.Protocol;
 
 public class HostAndPortUtil {

@@ -2,6 +2,7 @@ package redis.clients.jedis;
 
 import java.util.*;
 
+import redis.clients.host.HostAndPort;
 import redis.clients.jedis.exceptions.JedisConnectionException;
 import redis.clients.util.ClusterNodeInformation;
 import redis.clients.util.ClusterNodeInformationParser;

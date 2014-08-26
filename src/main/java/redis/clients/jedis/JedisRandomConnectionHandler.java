@@ -2,6 +2,8 @@ package redis.clients.jedis;
 
 import java.util.Set;
 
+import redis.clients.host.HostAndPort;
+
 public class JedisRandomConnectionHandler extends JedisClusterConnectionHandler {
 
     public JedisRandomConnectionHandler(Set<HostAndPort> nodes) {
