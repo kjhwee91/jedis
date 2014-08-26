@@ -18,7 +18,7 @@ import redis.clients.exceptions.JedisException;
 import redis.clients.exceptions.JedisMovedDataException;
 import redis.clients.host.HostAndPort;
 import redis.clients.jedis.Jedis;
-import redis.clients.jedis.JedisCluster;
+import redis.clients.jedis.cluster.JedisCluster;
 import redis.clients.jedis.tests.utils.JedisClusterTestUtil;
 import redis.clients.util.JedisClusterCRC16;
 
