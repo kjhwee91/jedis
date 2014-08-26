@@ -2,9 +2,9 @@ package redis.clients.util;
 
 import java.io.UnsupportedEncodingException;
 
+import redis.clients.exceptions.JedisDataException;
+import redis.clients.exceptions.JedisException;
 import redis.clients.jedis.Protocol;
-import redis.clients.jedis.exceptions.JedisDataException;
-import redis.clients.jedis.exceptions.JedisException;
 
 /**
  * The only reason to have this is to be able to compatible with java 1.5 :(

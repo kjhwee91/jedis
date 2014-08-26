@@ -13,9 +13,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import redis.clients.exceptions.JedisDataException;
+import redis.clients.exceptions.JedisException;
 import redis.clients.jedis.BinaryClient.LIST_POSITION;
-import redis.clients.jedis.exceptions.JedisDataException;
-import redis.clients.jedis.exceptions.JedisException;
 import redis.clients.util.JedisByteHashMap;
 import redis.clients.util.SafeEncoder;
 

@@ -3,8 +3,9 @@ package redis.clients.jedis.tests.commands;
 import org.hamcrest.CoreMatchers;
 import org.hamcrest.Matcher;
 import org.junit.Test;
+
+import redis.clients.exceptions.JedisDataException;
 import redis.clients.jedis.BinaryJedis;
-import redis.clients.jedis.exceptions.JedisDataException;
 import redis.clients.util.SafeEncoder;
 
 import java.util.ArrayList;

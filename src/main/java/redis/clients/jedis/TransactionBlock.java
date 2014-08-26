@@ -1,6 +1,6 @@
 package redis.clients.jedis;
 
-import redis.clients.jedis.exceptions.JedisException;
+import redis.clients.exceptions.JedisException;
 
 @Deprecated
 /**

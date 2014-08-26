@@ -1,11 +1,11 @@
 package redis.clients.jedis;
 
-import redis.clients.jedis.exceptions.JedisAskDataException;
-import redis.clients.jedis.exceptions.JedisClusterException;
-import redis.clients.jedis.exceptions.JedisClusterMaxRedirectionsException;
-import redis.clients.jedis.exceptions.JedisConnectionException;
-import redis.clients.jedis.exceptions.JedisMovedDataException;
-import redis.clients.jedis.exceptions.JedisRedirectionException;
+import redis.clients.exceptions.JedisAskDataException;
+import redis.clients.exceptions.JedisClusterException;
+import redis.clients.exceptions.JedisClusterMaxRedirectionsException;
+import redis.clients.exceptions.JedisConnectionException;
+import redis.clients.exceptions.JedisMovedDataException;
+import redis.clients.exceptions.JedisRedirectionException;
 import redis.clients.util.JedisClusterCRC16;
 
 public abstract class JedisClusterCommand<T> {

@@ -4,8 +4,8 @@ import org.apache.commons.pool2.PooledObjectFactory;
 import org.apache.commons.pool2.impl.GenericObjectPool;
 import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 
-import redis.clients.jedis.exceptions.JedisConnectionException;
-import redis.clients.jedis.exceptions.JedisException;
+import redis.clients.exceptions.JedisConnectionException;
+import redis.clients.exceptions.JedisException;
 
 public abstract class Pool<T> {
     protected GenericObjectPool<T> internalPool;

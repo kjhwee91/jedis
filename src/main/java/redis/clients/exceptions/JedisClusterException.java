@@ -1,4 +1,4 @@
-package redis.clients.jedis.exceptions;
+package redis.clients.exceptions;
 
 public class JedisClusterException extends JedisDataException {
     private static final long serialVersionUID = 3878126572474819403L;

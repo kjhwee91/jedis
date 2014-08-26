@@ -8,9 +8,9 @@ import java.net.SocketException;
 import java.util.ArrayList;
 import java.util.List;
 
+import redis.clients.exceptions.JedisConnectionException;
+import redis.clients.exceptions.JedisDataException;
 import redis.clients.jedis.Protocol.Command;
-import redis.clients.jedis.exceptions.JedisConnectionException;
-import redis.clients.jedis.exceptions.JedisDataException;
 import redis.clients.util.RedisInputStream;
 import redis.clients.util.RedisOutputStream;
 import redis.clients.util.SafeEncoder;

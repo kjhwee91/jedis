@@ -4,10 +4,10 @@ import java.util.List;
 
 import org.junit.Test;
 
+import redis.clients.exceptions.JedisDataException;
 import redis.clients.jedis.DebugParams;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisMonitor;
-import redis.clients.jedis.exceptions.JedisDataException;
 
 public class ControlCommandsTest extends JedisCommandTestBase {
     @Test

@@ -1,4 +1,4 @@
-package redis.clients.jedis.exceptions;
+package redis.clients.exceptions;
 
 import redis.clients.host.HostAndPort;
 

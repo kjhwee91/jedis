@@ -1,6 +1,6 @@
 package redis.clients.jedis;
 
-import redis.clients.jedis.exceptions.JedisDataException;
+import redis.clients.exceptions.JedisDataException;
 
 public class Response<T> {
     protected T response = null;

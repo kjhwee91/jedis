@@ -7,11 +7,11 @@ import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 import org.junit.Before;
 import org.junit.Test;
 
+import redis.clients.exceptions.JedisConnectionException;
 import redis.clients.host.HostAndPort;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisSentinelPool;
 import redis.clients.jedis.Transaction;
-import redis.clients.jedis.exceptions.JedisConnectionException;
 import redis.clients.jedis.tests.utils.JedisSentinelTestUtil;
 
 public class JedisSentinelPoolTest extends JedisTestBase {

@@ -3,7 +3,7 @@ package redis.clients.jedis;
 import java.util.ArrayList;
 import java.util.List;
 
-import redis.clients.jedis.exceptions.JedisDataException;
+import redis.clients.exceptions.JedisDataException;
 
 /**
  * Transaction is nearly identical to Pipeline, only differences are the

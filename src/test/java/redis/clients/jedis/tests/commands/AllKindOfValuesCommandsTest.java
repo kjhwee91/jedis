@@ -6,9 +6,9 @@ import java.util.Set;
 
 import org.junit.Test;
 
+import redis.clients.exceptions.JedisDataException;
 import redis.clients.jedis.ScanParams;
 import redis.clients.jedis.ScanResult;
-import redis.clients.jedis.exceptions.JedisDataException;
 import redis.clients.util.SafeEncoder;
 import static redis.clients.jedis.ScanParams.SCAN_POINTER_START;
 import static redis.clients.jedis.ScanParams.SCAN_POINTER_START_BINARY;

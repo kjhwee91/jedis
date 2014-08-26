@@ -5,8 +5,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 
+import redis.clients.exceptions.JedisConnectionException;
 import redis.clients.host.HostAndPort;
-import redis.clients.jedis.exceptions.JedisConnectionException;
 
 public class JedisSlotBasedConnectionHandler extends
 	JedisClusterConnectionHandler {

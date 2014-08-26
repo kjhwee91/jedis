@@ -5,7 +5,7 @@ import java.util.List;
 
 import org.junit.Test;
 
-import redis.clients.jedis.exceptions.JedisDataException;
+import redis.clients.exceptions.JedisDataException;
 
 public class StringValuesCommandsTest extends JedisCommandTestBase {
     @Test

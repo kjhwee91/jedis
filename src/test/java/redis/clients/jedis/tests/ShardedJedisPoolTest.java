@@ -10,13 +10,13 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import redis.clients.exceptions.JedisConnectionException;
 import redis.clients.host.HostAndPort;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisShardInfo;
 import redis.clients.jedis.ShardedJedis;
 import redis.clients.jedis.ShardedJedisPipeline;
 import redis.clients.jedis.ShardedJedisPool;
-import redis.clients.jedis.exceptions.JedisConnectionException;
 
 public class ShardedJedisPoolTest extends Assert {
     private static HostAndPort redis1 = HostAndPortUtil.getRedisServers()

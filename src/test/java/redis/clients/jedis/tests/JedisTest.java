@@ -8,12 +8,12 @@ import java.util.Map;
 
 import org.junit.Test;
 
+import redis.clients.exceptions.JedisConnectionException;
+import redis.clients.exceptions.JedisDataException;
 import redis.clients.jedis.BinaryJedis;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisShardInfo;
 import redis.clients.jedis.Protocol;
-import redis.clients.jedis.exceptions.JedisConnectionException;
-import redis.clients.jedis.exceptions.JedisDataException;
 import redis.clients.jedis.tests.commands.JedisCommandTestBase;
 import redis.clients.util.SafeEncoder;
 

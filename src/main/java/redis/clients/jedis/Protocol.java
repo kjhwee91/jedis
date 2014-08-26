@@ -4,12 +4,12 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import redis.clients.exceptions.JedisAskDataException;
+import redis.clients.exceptions.JedisClusterException;
+import redis.clients.exceptions.JedisConnectionException;
+import redis.clients.exceptions.JedisDataException;
+import redis.clients.exceptions.JedisMovedDataException;
 import redis.clients.host.HostAndPort;
-import redis.clients.jedis.exceptions.JedisAskDataException;
-import redis.clients.jedis.exceptions.JedisClusterException;
-import redis.clients.jedis.exceptions.JedisConnectionException;
-import redis.clients.jedis.exceptions.JedisDataException;
-import redis.clients.jedis.exceptions.JedisMovedDataException;
 import redis.clients.util.RedisInputStream;
 import redis.clients.util.RedisOutputStream;
 import redis.clients.util.SafeEncoder;

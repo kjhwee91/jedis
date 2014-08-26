@@ -20,7 +20,7 @@ import java.io.FilterInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-import redis.clients.jedis.exceptions.JedisConnectionException;
+import redis.clients.exceptions.JedisConnectionException;
 
 public class RedisInputStream extends FilterInputStream {
 

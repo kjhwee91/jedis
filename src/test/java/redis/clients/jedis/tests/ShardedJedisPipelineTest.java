@@ -15,6 +15,7 @@ import java.util.UUID;
 import org.junit.Before;
 import org.junit.Test;
 
+import redis.clients.exceptions.JedisDataException;
 import redis.clients.host.HostAndPort;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisShardInfo;
@@ -22,7 +23,6 @@ import redis.clients.jedis.Response;
 import redis.clients.jedis.ShardedJedis;
 import redis.clients.jedis.ShardedJedisPipeline;
 import redis.clients.jedis.Tuple;
-import redis.clients.jedis.exceptions.JedisDataException;
 
 public class ShardedJedisPipelineTest {
 

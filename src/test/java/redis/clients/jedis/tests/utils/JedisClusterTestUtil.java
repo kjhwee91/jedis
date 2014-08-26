@@ -1,7 +1,7 @@
 package redis.clients.jedis.tests.utils;
 
+import redis.clients.exceptions.JedisException;
 import redis.clients.jedis.Jedis;
-import redis.clients.jedis.exceptions.JedisException;
 
 public class JedisClusterTestUtil {
     public static void waitForClusterReady(Jedis...nodes) throws InterruptedException {
