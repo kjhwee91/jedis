@@ -1,4 +1,4 @@
-package redis.clients.jedis;
+package redis.clients.jedis.pool;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -11,6 +11,9 @@ import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 
 import redis.clients.exceptions.JedisConnectionException;
 import redis.clients.host.HostAndPort;
+import redis.clients.jedis.Jedis;
+import redis.clients.jedis.JedisPubSub;
+import redis.clients.jedis.Protocol;
 import redis.clients.util.Pool;
 
 public class JedisSentinelPool extends Pool<Jedis> {

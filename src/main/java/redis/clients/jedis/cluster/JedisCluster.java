@@ -6,11 +6,11 @@ import redis.clients.jedis.BinaryClient;
 import redis.clients.jedis.DebugParams;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisCommands;
-import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.ScanResult;
 import redis.clients.jedis.SortingParams;
 import redis.clients.jedis.Tuple;
 import redis.clients.jedis.BinaryClient.LIST_POSITION;
+import redis.clients.jedis.pool.JedisPool;
 
 import java.util.List;
 import java.util.Map;

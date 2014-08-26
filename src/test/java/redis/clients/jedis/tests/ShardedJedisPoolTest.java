@@ -16,7 +16,7 @@ import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisShardInfo;
 import redis.clients.jedis.ShardedJedis;
 import redis.clients.jedis.ShardedJedisPipeline;
-import redis.clients.jedis.ShardedJedisPool;
+import redis.clients.jedis.pool.ShardedJedisPool;
 
 public class ShardedJedisPoolTest extends Assert {
     private static HostAndPort redis1 = HostAndPortUtil.getRedisServers()

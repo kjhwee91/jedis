@@ -1,8 +1,11 @@
-package redis.clients.jedis;
+package redis.clients.jedis.pool;
 
 import org.apache.commons.pool2.PooledObject;
 import org.apache.commons.pool2.PooledObjectFactory;
 import org.apache.commons.pool2.impl.DefaultPooledObject;
+
+import redis.clients.jedis.BinaryJedis;
+import redis.clients.jedis.Jedis;
 
 /**
  * PoolableObjectFactory custom impl.

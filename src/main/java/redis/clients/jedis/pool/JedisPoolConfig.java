@@ -1,4 +1,4 @@
-package redis.clients.jedis;
+package redis.clients.jedis.pool;
 
 import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 
