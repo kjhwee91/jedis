@@ -2,7 +2,7 @@ package redis.clients.jedis.tests.utils;
 
 import java.util.concurrent.atomic.AtomicReference;
 
-import redis.clients.jedis.HostAndPort;
+import redis.clients.host.HostAndPort;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPubSub;
 import redis.clients.jedis.tests.utils.FailoverAbortedException;

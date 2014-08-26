@@ -1,6 +1,6 @@
 package redis.clients.util;
 
-import redis.clients.jedis.HostAndPort;
+import redis.clients.host.HostAndPort;
 
 public class ClusterNodeInformationParser {
     private static final String SLOT_IMPORT_IDENTIFIER = "-<-";

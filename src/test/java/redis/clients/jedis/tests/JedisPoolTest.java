@@ -7,7 +7,7 @@ import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 import org.junit.Assert;
 import org.junit.Test;
 
-import redis.clients.jedis.HostAndPort;
+import redis.clients.host.HostAndPort;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;

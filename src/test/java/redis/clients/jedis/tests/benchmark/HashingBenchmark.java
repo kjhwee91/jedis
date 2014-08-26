@@ -7,7 +7,7 @@ import java.util.Calendar;
 import java.util.Collection;
 import java.util.List;
 
-import redis.clients.jedis.HostAndPort;
+import redis.clients.host.HostAndPort;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisShardInfo;
 import redis.clients.jedis.ShardedJedis;

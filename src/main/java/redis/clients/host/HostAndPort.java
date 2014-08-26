@@ -1,4 +1,4 @@
-package redis.clients.jedis;
+package redis.clients.host;
 
 public class HostAndPort {
     public static final String LOCALHOST_STR = "localhost";

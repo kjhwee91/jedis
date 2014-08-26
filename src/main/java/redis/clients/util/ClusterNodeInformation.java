@@ -1,6 +1,6 @@
 package redis.clients.util;
 
-import redis.clients.jedis.HostAndPort;
+import redis.clients.host.HostAndPort;
 
 import java.util.ArrayList;
 import java.util.List;
