@@ -5,7 +5,7 @@ import java.net.UnknownHostException;
 import java.util.Calendar;
 
 import redis.clients.host.HostAndPort;
-import redis.clients.jedis.Jedis;
+import redis.clients.jedis.core.Jedis;
 import redis.clients.jedis.tests.HostAndPortUtil;
 
 public class GetSetBenchmark {

@@ -8,9 +8,9 @@ import org.apache.commons.pool2.PooledObjectFactory;
 import org.apache.commons.pool2.impl.DefaultPooledObject;
 import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 
-import redis.clients.jedis.Jedis;
-import redis.clients.jedis.JedisShardInfo;
-import redis.clients.jedis.ShardedJedis;
+import redis.clients.jedis.core.Jedis;
+import redis.clients.jedis.core.JedisShardInfo;
+import redis.clients.jedis.shard.ShardedJedis;
 import redis.clients.util.Hashing;
 import redis.clients.util.Pool;
 

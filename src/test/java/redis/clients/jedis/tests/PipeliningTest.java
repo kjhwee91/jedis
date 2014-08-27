@@ -14,10 +14,10 @@ import org.junit.Test;
 
 import redis.clients.exceptions.JedisDataException;
 import redis.clients.host.HostAndPort;
-import redis.clients.jedis.Jedis;
-import redis.clients.jedis.Pipeline;
-import redis.clients.jedis.Response;
-import redis.clients.jedis.Tuple;
+import redis.clients.jedis.core.Jedis;
+import redis.clients.jedis.pipelineUtil.Pipeline;
+import redis.clients.jedis.tuple.Tuple;
+import redis.clients.jedis.worker.Response;
 
 public class PipeliningTest extends Assert {
     private static HostAndPort hnp = HostAndPortUtil.getRedisServers().get(0);

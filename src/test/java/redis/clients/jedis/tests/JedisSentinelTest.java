@@ -10,7 +10,7 @@ import org.junit.Test;
 
 import redis.clients.exceptions.JedisDataException;
 import redis.clients.host.HostAndPort;
-import redis.clients.jedis.Jedis;
+import redis.clients.jedis.core.Jedis;
 import redis.clients.jedis.tests.utils.JedisSentinelTestUtil;
 
 public class JedisSentinelTest extends JedisTestBase {

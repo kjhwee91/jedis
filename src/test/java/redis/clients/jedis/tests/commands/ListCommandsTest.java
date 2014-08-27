@@ -7,8 +7,8 @@ import java.util.List;
 import org.junit.Test;
 
 import redis.clients.exceptions.JedisDataException;
-import redis.clients.jedis.Client;
-import redis.clients.jedis.Jedis;
+import redis.clients.jedis.client.Client;
+import redis.clients.jedis.core.Jedis;
 
 public class ListCommandsTest extends JedisCommandTestBase {
     final byte[] bfoo = { 0x01, 0x02, 0x03, 0x04 };

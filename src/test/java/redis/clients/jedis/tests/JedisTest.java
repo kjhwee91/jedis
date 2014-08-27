@@ -10,11 +10,11 @@ import org.junit.Test;
 
 import redis.clients.exceptions.JedisConnectionException;
 import redis.clients.exceptions.JedisDataException;
-import redis.clients.jedis.BinaryJedis;
-import redis.clients.jedis.Jedis;
-import redis.clients.jedis.JedisShardInfo;
-import redis.clients.jedis.Protocol;
+import redis.clients.jedis.core.BinaryJedis;
+import redis.clients.jedis.core.Jedis;
+import redis.clients.jedis.core.JedisShardInfo;
 import redis.clients.jedis.tests.commands.JedisCommandTestBase;
+import redis.clients.jedis.worker.Protocol;
 import redis.clients.util.SafeEncoder;
 
 public class JedisTest extends JedisCommandTestBase {

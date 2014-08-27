@@ -1,16 +1,18 @@
 package redis.clients.jedis.cluster;
 
 import redis.clients.host.HostAndPort;
-import redis.clients.jedis.BasicCommands;
-import redis.clients.jedis.BinaryClient;
-import redis.clients.jedis.DebugParams;
-import redis.clients.jedis.Jedis;
-import redis.clients.jedis.JedisCommands;
-import redis.clients.jedis.ScanResult;
-import redis.clients.jedis.SortingParams;
-import redis.clients.jedis.Tuple;
-import redis.clients.jedis.BinaryClient.LIST_POSITION;
+import redis.clients.jedis.client.BinaryClient;
+import redis.clients.jedis.client.BinaryClient.LIST_POSITION;
+import redis.clients.jedis.cmdSupport.BasicCommands;
+import redis.clients.jedis.cmdSupport.JedisCommands;
+import redis.clients.jedis.core.Jedis;
+import redis.clients.jedis.handler.JedisClusterConnectionHandler;
+import redis.clients.jedis.handler.JedisSlotBasedConnectionHandler;
 import redis.clients.jedis.pool.JedisPool;
+import redis.clients.jedis.support.DebugParams;
+import redis.clients.jedis.support.ScanResult;
+import redis.clients.jedis.support.SortingParams;
+import redis.clients.jedis.tuple.Tuple;
 
 import java.util.List;
 import java.util.Map;

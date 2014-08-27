@@ -12,11 +12,11 @@ import org.junit.Test;
 
 import redis.clients.exceptions.JedisConnectionException;
 import redis.clients.host.HostAndPort;
-import redis.clients.jedis.Jedis;
-import redis.clients.jedis.JedisShardInfo;
-import redis.clients.jedis.ShardedJedis;
-import redis.clients.jedis.ShardedJedisPipeline;
+import redis.clients.jedis.core.Jedis;
+import redis.clients.jedis.core.JedisShardInfo;
 import redis.clients.jedis.pool.ShardedJedisPool;
+import redis.clients.jedis.shard.ShardedJedis;
+import redis.clients.jedis.shard.ShardedJedisPipeline;
 
 public class ShardedJedisPoolTest extends Assert {
     private static HostAndPort redis1 = HostAndPortUtil.getRedisServers()

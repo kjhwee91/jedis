@@ -5,8 +5,9 @@ import java.net.URI;
 import org.apache.commons.pool2.impl.GenericObjectPool;
 import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 
-import redis.clients.jedis.Jedis;
-import redis.clients.jedis.Protocol;
+import redis.clients.jedis.core.Jedis;
+import redis.clients.jedis.core.JedisFactory;
+import redis.clients.jedis.worker.Protocol;
 import redis.clients.util.Pool;
 
 public class JedisPool extends Pool<Jedis> {

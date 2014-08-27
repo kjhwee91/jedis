@@ -9,10 +9,10 @@ import org.junit.Test;
 
 import redis.clients.exceptions.JedisConnectionException;
 import redis.clients.host.HostAndPort;
-import redis.clients.jedis.Jedis;
-import redis.clients.jedis.Transaction;
+import redis.clients.jedis.core.Jedis;
 import redis.clients.jedis.pool.JedisPool;
 import redis.clients.jedis.pool.JedisPoolConfig;
+import redis.clients.jedis.transaction.Transaction;
 
 public class JedisPoolTest extends Assert {
     private static HostAndPort hnp = HostAndPortUtil.getRedisServers().get(0);

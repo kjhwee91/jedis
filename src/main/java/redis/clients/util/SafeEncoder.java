@@ -4,7 +4,7 @@ import java.io.UnsupportedEncodingException;
 
 import redis.clients.exceptions.JedisDataException;
 import redis.clients.exceptions.JedisException;
-import redis.clients.jedis.Protocol;
+import redis.clients.jedis.worker.Protocol;
 
 /**
  * The only reason to have this is to be able to compatible with java 1.5 :(

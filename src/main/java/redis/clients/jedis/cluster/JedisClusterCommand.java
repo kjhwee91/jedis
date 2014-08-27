@@ -6,7 +6,8 @@ import redis.clients.exceptions.JedisClusterMaxRedirectionsException;
 import redis.clients.exceptions.JedisConnectionException;
 import redis.clients.exceptions.JedisMovedDataException;
 import redis.clients.exceptions.JedisRedirectionException;
-import redis.clients.jedis.Jedis;
+import redis.clients.jedis.core.Jedis;
+import redis.clients.jedis.handler.JedisClusterConnectionHandler;
 import redis.clients.util.JedisClusterCRC16;
 
 public abstract class JedisClusterCommand<T> {

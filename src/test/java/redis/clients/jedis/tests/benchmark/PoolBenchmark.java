@@ -7,7 +7,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 
 import redis.clients.host.HostAndPort;
-import redis.clients.jedis.Jedis;
+import redis.clients.jedis.core.Jedis;
 import redis.clients.jedis.pool.JedisPool;
 import redis.clients.jedis.tests.HostAndPortUtil;
 

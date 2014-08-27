@@ -8,9 +8,9 @@ import java.util.Collection;
 import java.util.List;
 
 import redis.clients.host.HostAndPort;
-import redis.clients.jedis.Jedis;
-import redis.clients.jedis.JedisShardInfo;
-import redis.clients.jedis.ShardedJedis;
+import redis.clients.jedis.core.Jedis;
+import redis.clients.jedis.core.JedisShardInfo;
+import redis.clients.jedis.shard.ShardedJedis;
 import redis.clients.jedis.tests.HostAndPortUtil;
 
 public class HashingBenchmark {

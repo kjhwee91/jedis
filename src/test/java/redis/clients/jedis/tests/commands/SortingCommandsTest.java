@@ -5,7 +5,7 @@ import java.util.List;
 
 import org.junit.Test;
 
-import redis.clients.jedis.SortingParams;
+import redis.clients.jedis.support.SortingParams;
 
 public class SortingCommandsTest extends JedisCommandTestBase {
     final byte[] bfoo = { 0x01, 0x02, 0x03, 0x04 };
