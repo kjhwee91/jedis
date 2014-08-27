@@ -1,6 +1,5 @@
-package redis.clients.jedis.usage;
+package redis.clients.jedis.client;
 
-import redis.clients.jedis.client.Client;
 
 public abstract class JedisMonitor {
     protected Client client;

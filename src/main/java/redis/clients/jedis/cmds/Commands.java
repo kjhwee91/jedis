@@ -1,4 +1,4 @@
-package redis.clients.jedis.cmd;
+package redis.clients.jedis.cmds;
 
 import java.util.Map;
 

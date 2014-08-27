@@ -5,9 +5,9 @@ import java.util.List;
 import org.junit.Test;
 
 import redis.clients.exceptions.JedisDataException;
+import redis.clients.jedis.client.JedisMonitor;
 import redis.clients.jedis.core.Jedis;
 import redis.clients.jedis.support.DebugParams;
-import redis.clients.jedis.usage.JedisMonitor;
 
 public class ControlCommandsTest extends JedisCommandTestBase {
     @Test

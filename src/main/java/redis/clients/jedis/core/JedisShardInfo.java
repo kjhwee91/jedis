@@ -1,8 +1,7 @@
-package redis.clients.jedis.info;
+package redis.clients.jedis.core;
 
 import java.net.URI;
 
-import redis.clients.jedis.core.Jedis;
 import redis.clients.jedis.worker.Protocol;
 import redis.clients.util.ShardInfo;
 import redis.clients.util.Sharded;

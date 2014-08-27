@@ -12,8 +12,8 @@ import org.junit.Test;
 
 import redis.clients.exceptions.JedisConnectionException;
 import redis.clients.jedis.binary.BinaryJedisPubSub;
+import redis.clients.jedis.client.JedisPubSub;
 import redis.clients.jedis.core.Jedis;
-import redis.clients.jedis.usage.JedisPubSub;
 import redis.clients.util.SafeEncoder;
 
 public class PublishSubscribeCommandsTest extends JedisCommandTestBase {

@@ -1,4 +1,4 @@
-package redis.clients.jedis.cmdSupport;
+package redis.clients.jedis.cmdsUse;
 
 import java.util.List;
 

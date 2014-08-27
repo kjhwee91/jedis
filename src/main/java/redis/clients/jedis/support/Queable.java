@@ -1,4 +1,4 @@
-package redis.clients.jedis.usage;
+package redis.clients.jedis.support;
 
 import java.util.LinkedList;
 import java.util.Queue;

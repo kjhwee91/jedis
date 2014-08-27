@@ -1,4 +1,4 @@
-package redis.clients.jedis.usage;
+package redis.clients.jedis.client;
 
 import static redis.clients.jedis.worker.Protocol.Keyword.MESSAGE;
 import static redis.clients.jedis.worker.Protocol.Keyword.PMESSAGE;
@@ -12,7 +12,6 @@ import java.util.List;
 
 import redis.clients.exceptions.JedisConnectionException;
 import redis.clients.exceptions.JedisException;
-import redis.clients.jedis.client.Client;
 import redis.clients.util.SafeEncoder;
 
 public abstract class JedisPubSub {

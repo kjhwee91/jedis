@@ -9,7 +9,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 import redis.clients.jedis.client.BinaryClient.LIST_POSITION;
-import redis.clients.jedis.cmd.Commands;
+import redis.clients.jedis.cmds.Commands;
 import redis.clients.jedis.support.BitOP;
 import redis.clients.jedis.support.BitPosParams;
 import redis.clients.jedis.support.ScanParams;

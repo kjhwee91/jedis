@@ -13,9 +13,9 @@ import redis.clients.jedis.core.Jedis;
 import redis.clients.jedis.pipeline.BinaryRedisPipeline;
 import redis.clients.jedis.pipeline.RedisPipeline;
 import redis.clients.jedis.support.BitPosParams;
+import redis.clients.jedis.support.Queable;
 import redis.clients.jedis.support.SortingParams;
 import redis.clients.jedis.tuple.Tuple;
-import redis.clients.jedis.usage.Queable;
 import redis.clients.jedis.worker.BuilderFactory;
 import redis.clients.jedis.worker.Response;
 

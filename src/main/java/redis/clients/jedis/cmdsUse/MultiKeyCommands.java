@@ -1,13 +1,13 @@
-package redis.clients.jedis.cmdSupport;
+package redis.clients.jedis.cmdsUse;
 
 import java.util.List;
 import java.util.Set;
 
+import redis.clients.jedis.client.JedisPubSub;
 import redis.clients.jedis.support.BitOP;
 import redis.clients.jedis.support.ScanResult;
 import redis.clients.jedis.support.SortingParams;
 import redis.clients.jedis.support.ZParams;
-import redis.clients.jedis.usage.JedisPubSub;
 
 public interface MultiKeyCommands {
     Long del(String... keys);

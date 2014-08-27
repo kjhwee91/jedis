@@ -11,9 +11,9 @@ import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 
 import redis.clients.exceptions.JedisConnectionException;
 import redis.clients.host.HostAndPort;
+import redis.clients.jedis.client.JedisPubSub;
 import redis.clients.jedis.core.Jedis;
 import redis.clients.jedis.core.JedisFactory;
-import redis.clients.jedis.usage.JedisPubSub;
 import redis.clients.jedis.worker.Protocol;
 import redis.clients.util.Pool;
 
