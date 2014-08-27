@@ -24,6 +24,7 @@ import redis.clients.jedis.cmdSupport.BasicCommands;
 import redis.clients.jedis.cmdSupport.BinaryJedisCommands;
 import redis.clients.jedis.cmdSupport.BinaryScriptingCommands;
 import redis.clients.jedis.cmdSupport.MultiKeyBinaryCommands;
+import redis.clients.jedis.info.JedisShardInfo;
 import redis.clients.jedis.pipelineUtil.Pipeline;
 import redis.clients.jedis.pipelineUtil.PipelineBlock;
 import redis.clients.jedis.support.BitOP;

@@ -8,6 +8,7 @@ import redis.clients.jedis.cmdSupport.ClusterCommands;
 import redis.clients.jedis.cmdSupport.JedisCommands;
 import redis.clients.jedis.cmdSupport.MultiKeyCommands;
 import redis.clients.jedis.cmdSupport.ScriptingCommands;
+import redis.clients.jedis.info.JedisShardInfo;
 import redis.clients.jedis.support.BitOP;
 import redis.clients.jedis.support.BitPosParams;
 import redis.clients.jedis.support.ScanParams;

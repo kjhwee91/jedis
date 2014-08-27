@@ -6,7 +6,7 @@ import redis.clients.jedis.client.BinaryClient;
 import redis.clients.jedis.client.BinaryClient.LIST_POSITION;
 import redis.clients.jedis.cmdSupport.JedisCommands;
 import redis.clients.jedis.core.Jedis;
-import redis.clients.jedis.core.JedisShardInfo;
+import redis.clients.jedis.info.JedisShardInfo;
 import redis.clients.jedis.support.ScanResult;
 import redis.clients.jedis.support.SortingParams;
 import redis.clients.jedis.tuple.Tuple;

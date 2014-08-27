@@ -13,7 +13,7 @@ import org.junit.Test;
 import redis.clients.exceptions.JedisConnectionException;
 import redis.clients.host.HostAndPort;
 import redis.clients.jedis.core.Jedis;
-import redis.clients.jedis.core.JedisShardInfo;
+import redis.clients.jedis.info.JedisShardInfo;
 import redis.clients.jedis.pool.ShardedJedisPool;
 import redis.clients.jedis.shard.ShardedJedis;
 import redis.clients.jedis.shard.ShardedJedisPipeline;

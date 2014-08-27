@@ -8,7 +8,7 @@ import org.junit.Test;
 
 import redis.clients.host.HostAndPort;
 import redis.clients.jedis.core.Jedis;
-import redis.clients.jedis.core.JedisShardInfo;
+import redis.clients.jedis.info.JedisShardInfo;
 import redis.clients.jedis.shard.ShardedJedis;
 import redis.clients.jedis.shard.ShardedJedisPipeline;
 import redis.clients.jedis.worker.Protocol;

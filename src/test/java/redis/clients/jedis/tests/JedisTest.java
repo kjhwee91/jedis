@@ -12,7 +12,7 @@ import redis.clients.exceptions.JedisConnectionException;
 import redis.clients.exceptions.JedisDataException;
 import redis.clients.jedis.core.BinaryJedis;
 import redis.clients.jedis.core.Jedis;
-import redis.clients.jedis.core.JedisShardInfo;
+import redis.clients.jedis.info.JedisShardInfo;
 import redis.clients.jedis.tests.commands.JedisCommandTestBase;
 import redis.clients.jedis.worker.Protocol;
 import redis.clients.util.SafeEncoder;
