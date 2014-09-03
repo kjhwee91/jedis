@@ -5,7 +5,7 @@ import org.hamcrest.Matcher;
 import org.junit.Test;
 
 import redis.clients.exceptions.JedisDataException;
-import redis.clients.jedis.core.BinaryJedis;
+import redis.clients.jedis.BinaryJedis;
 import redis.clients.util.SafeEncoder;
 
 import java.util.ArrayList;

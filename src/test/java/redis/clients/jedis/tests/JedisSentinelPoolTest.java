@@ -9,8 +9,8 @@ import org.junit.Test;
 
 import redis.clients.exceptions.JedisConnectionException;
 import redis.clients.host.HostAndPort;
-import redis.clients.jedis.core.Jedis;
-import redis.clients.jedis.pool.JedisSentinelPool;
+import redis.clients.jedis.Jedis;
+import redis.clients.jedis.pool.using.JedisSentinelPool;
 import redis.clients.jedis.tests.utils.JedisSentinelTestUtil;
 import redis.clients.jedis.transaction.Transaction;
 

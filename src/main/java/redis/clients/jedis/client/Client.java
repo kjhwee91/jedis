@@ -1,6 +1,6 @@
 package redis.clients.jedis.client;
 
-import static redis.clients.jedis.worker.Protocol.toByteArray;
+import static redis.clients.jedis.support.network.Protocol.toByteArray;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -8,14 +8,13 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import redis.clients.jedis.client.BinaryClient.LIST_POSITION;
-import redis.clients.jedis.cmds.Commands;
+import redis.clients.jedis.commands.Commands;
 import redis.clients.jedis.support.BitOP;
-import redis.clients.jedis.support.BitPosParams;
-import redis.clients.jedis.support.ScanParams;
-import redis.clients.jedis.support.SortingParams;
-import redis.clients.jedis.support.ZParams;
-import redis.clients.jedis.worker.Protocol;
+import redis.clients.jedis.support.network.Protocol;
+import redis.clients.jedis.support.params.BitPosParams;
+import redis.clients.jedis.support.params.ScanParams;
+import redis.clients.jedis.support.params.SortingParams;
+import redis.clients.jedis.support.params.ZParams;
 import redis.clients.util.SafeEncoder;
 
 public class Client extends BinaryClient implements Commands {

@@ -3,7 +3,7 @@ package redis.clients.jedis.handler;
 import java.util.Set;
 
 import redis.clients.host.HostAndPort;
-import redis.clients.jedis.core.Jedis;
+import redis.clients.jedis.Jedis;
 
 public class JedisRandomConnectionHandler extends JedisClusterConnectionHandler {
 

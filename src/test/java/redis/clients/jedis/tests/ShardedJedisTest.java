@@ -7,11 +7,11 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import redis.clients.host.HostAndPort;
-import redis.clients.jedis.core.Jedis;
-import redis.clients.jedis.core.JedisShardInfo;
-import redis.clients.jedis.shard.ShardedJedis;
-import redis.clients.jedis.shard.ShardedJedisPipeline;
-import redis.clients.jedis.worker.Protocol;
+import redis.clients.jedis.Jedis;
+import redis.clients.jedis.JedisShardInfo;
+import redis.clients.jedis.sharded.ShardedJedis;
+import redis.clients.jedis.sharded.ShardedJedisPipeline;
+import redis.clients.jedis.support.network.Protocol;
 import redis.clients.util.Hashing;
 import redis.clients.util.SafeEncoder;
 import redis.clients.util.Sharded;

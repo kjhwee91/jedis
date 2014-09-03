@@ -6,7 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import redis.clients.exceptions.JedisConnectionException;
-import redis.clients.jedis.worker.Connection;
+import redis.clients.jedis.support.network.Connection;
 
 public class ConnectionTest extends Assert {
     private Connection client;

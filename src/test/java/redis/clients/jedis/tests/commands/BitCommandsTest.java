@@ -3,8 +3,8 @@ package redis.clients.jedis.tests.commands;
 import org.junit.Test;
 
 import redis.clients.jedis.support.BitOP;
-import redis.clients.jedis.support.BitPosParams;
-import redis.clients.jedis.worker.Protocol;
+import redis.clients.jedis.support.network.Protocol;
+import redis.clients.jedis.support.params.BitPosParams;
 
 public class BitCommandsTest extends JedisCommandTestBase {
     @Test

@@ -3,7 +3,7 @@ package redis.clients.jedis.tests;
 import org.junit.Assert;
 import org.junit.Test;
 
-import redis.clients.jedis.worker.BuilderFactory;
+import redis.clients.jedis.support.build.BuilderFactory;
 
 public class BuilderFactoryTest extends Assert {
     @Test

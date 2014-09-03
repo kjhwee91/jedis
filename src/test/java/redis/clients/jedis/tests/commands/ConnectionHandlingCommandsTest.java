@@ -3,7 +3,7 @@ package redis.clients.jedis.tests.commands;
 import org.junit.Test;
 
 import redis.clients.host.HostAndPort;
-import redis.clients.jedis.core.BinaryJedis;
+import redis.clients.jedis.BinaryJedis;
 import redis.clients.jedis.tests.HostAndPortUtil;
 
 public class ConnectionHandlingCommandsTest extends JedisCommandTestBase {

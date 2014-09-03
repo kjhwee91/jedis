@@ -10,10 +10,10 @@ import java.util.Set;
 
 import org.junit.Test;
 
-import redis.clients.jedis.support.ScanParams;
 import redis.clients.jedis.support.ScanResult;
-import static redis.clients.jedis.support.ScanParams.SCAN_POINTER_START;
-import static redis.clients.jedis.support.ScanParams.SCAN_POINTER_START_BINARY;
+import redis.clients.jedis.support.params.ScanParams;
+import static redis.clients.jedis.support.params.ScanParams.SCAN_POINTER_START;
+import static redis.clients.jedis.support.params.ScanParams.SCAN_POINTER_START_BINARY;
 
 public class HashesCommandsTest extends JedisCommandTestBase {
     final byte[] bfoo = { 0x01, 0x02, 0x03, 0x04 };

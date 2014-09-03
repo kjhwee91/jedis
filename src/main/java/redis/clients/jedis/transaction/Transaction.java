@@ -5,8 +5,8 @@ import java.util.List;
 
 import redis.clients.exceptions.JedisDataException;
 import redis.clients.jedis.client.Client;
-import redis.clients.jedis.pipelineUtil.MultiKeyPipelineBase;
-import redis.clients.jedis.worker.Response;
+import redis.clients.jedis.pipeline.MultiKeyPipelineBase;
+import redis.clients.jedis.support.build.Response;
 
 /**
  * Transaction is nearly identical to Pipeline, only differences are the

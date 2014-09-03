@@ -8,7 +8,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import redis.clients.exceptions.JedisDataException;
-import redis.clients.jedis.worker.Protocol.Keyword;
+import redis.clients.jedis.support.network.Protocol.Keyword;
 
 public class BinaryValuesCommandsTest extends JedisCommandTestBase {
     byte[] bfoo = { 0x01, 0x02, 0x03, 0x04 };

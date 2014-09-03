@@ -17,12 +17,12 @@ import org.junit.Test;
 
 import redis.clients.exceptions.JedisDataException;
 import redis.clients.host.HostAndPort;
-import redis.clients.jedis.core.Jedis;
-import redis.clients.jedis.core.JedisShardInfo;
-import redis.clients.jedis.shard.ShardedJedis;
-import redis.clients.jedis.shard.ShardedJedisPipeline;
-import redis.clients.jedis.tuple.Tuple;
-import redis.clients.jedis.worker.Response;
+import redis.clients.jedis.Jedis;
+import redis.clients.jedis.JedisShardInfo;
+import redis.clients.jedis.sharded.ShardedJedis;
+import redis.clients.jedis.sharded.ShardedJedisPipeline;
+import redis.clients.jedis.support.Tuple;
+import redis.clients.jedis.support.build.Response;
 
 public class ShardedJedisPipelineTest {
 

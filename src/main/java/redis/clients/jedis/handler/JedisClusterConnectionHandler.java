@@ -4,8 +4,8 @@ import java.util.*;
 
 import redis.clients.exceptions.JedisConnectionException;
 import redis.clients.host.HostAndPort;
+import redis.clients.jedis.Jedis;
 import redis.clients.jedis.client.Client;
-import redis.clients.jedis.core.Jedis;
 import redis.clients.jedis.pool.JedisPool;
 import redis.clients.util.ClusterNodeInformation;
 import redis.clients.util.ClusterNodeInformationParser;

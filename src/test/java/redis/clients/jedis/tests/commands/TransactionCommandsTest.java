@@ -12,11 +12,11 @@ import org.junit.Before;
 import org.junit.Test;
 
 import redis.clients.exceptions.JedisDataException;
-import redis.clients.jedis.core.Jedis;
-import redis.clients.jedis.pipelineUtil.Pipeline;
+import redis.clients.jedis.Jedis;
+import redis.clients.jedis.pipeline.Pipeline;
+import redis.clients.jedis.support.build.Response;
+import redis.clients.jedis.support.network.Protocol.Keyword;
 import redis.clients.jedis.transaction.Transaction;
-import redis.clients.jedis.worker.Response;
-import redis.clients.jedis.worker.Protocol.Keyword;
 
 public class TransactionCommandsTest extends JedisCommandTestBase {
     final byte[] bfoo = { 0x01, 0x02, 0x03, 0x04 };

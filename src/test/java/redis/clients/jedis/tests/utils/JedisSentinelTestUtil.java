@@ -3,8 +3,8 @@ package redis.clients.jedis.tests.utils;
 import java.util.concurrent.atomic.AtomicReference;
 
 import redis.clients.host.HostAndPort;
-import redis.clients.jedis.client.JedisPubSub;
-import redis.clients.jedis.core.Jedis;
+import redis.clients.jedis.Jedis;
+import redis.clients.jedis.pubsub.JedisPubSub;
 import redis.clients.jedis.tests.utils.FailoverAbortedException;
 
 public class JedisSentinelTestUtil {

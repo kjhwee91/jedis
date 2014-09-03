@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import redis.clients.host.HostAndPort;
-import redis.clients.jedis.worker.Protocol;
+import redis.clients.jedis.support.network.Protocol;
 
 public class HostAndPortUtil {
     private static List<HostAndPort> redisHostAndPortList = new ArrayList<HostAndPort>();

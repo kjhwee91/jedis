@@ -12,7 +12,7 @@ import java.util.List;
 
 import org.junit.Test;
 
-import redis.clients.jedis.worker.Protocol;
+import redis.clients.jedis.support.network.Protocol;
 import redis.clients.util.RedisInputStream;
 import redis.clients.util.RedisOutputStream;
 import redis.clients.util.SafeEncoder;
