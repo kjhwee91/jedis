@@ -7,8 +7,8 @@ import java.util.Set;
 
 import redis.clients.host.HostAndPort;
 import redis.clients.jedis.Jedis;
-import redis.clients.jedis.commands.JedisCommands;
-import redis.clients.jedis.commands.using.BasicCommands;
+import redis.clients.jedis.commandsBase.JedisCommands;
+import redis.clients.jedis.commandsBase.using.BasicCommands;
 import redis.clients.jedis.handler.JedisClusterConnectionHandler;
 import redis.clients.jedis.handler.JedisSlotBasedConnectionHandler;
 import redis.clients.jedis.listPosition.ListPosition.LIST_POSITION;

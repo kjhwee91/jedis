@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
 
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisShardInfo;
-import redis.clients.jedis.commands.JedisCommands;
+import redis.clients.jedis.commandsBase.JedisCommands;
 import redis.clients.jedis.listPosition.ListPosition.LIST_POSITION;
 import redis.clients.jedis.support.ScanResult;
 import redis.clients.jedis.support.Tuple;

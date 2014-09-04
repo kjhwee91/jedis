@@ -11,12 +11,12 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
-import redis.clients.jedis.commands.JedisCommands;
-import redis.clients.jedis.commands.using.AdvancedJedisCommands;
-import redis.clients.jedis.commands.using.BasicCommands;
-import redis.clients.jedis.commands.using.ClusterCommands;
-import redis.clients.jedis.commands.using.MultiKeyCommands;
-import redis.clients.jedis.commands.using.ScriptingCommands;
+import redis.clients.jedis.commandsBase.JedisCommands;
+import redis.clients.jedis.commandsBase.using.AdvancedJedisCommands;
+import redis.clients.jedis.commandsBase.using.BasicCommands;
+import redis.clients.jedis.commandsBase.using.ClusterCommands;
+import redis.clients.jedis.commandsBase.using.MultiKeyCommands;
+import redis.clients.jedis.commandsBase.using.ScriptingCommands;
 import redis.clients.jedis.listPosition.ListPosition.LIST_POSITION;
 import redis.clients.jedis.pubsub.JedisPubSub;
 import redis.clients.jedis.support.BitOP;

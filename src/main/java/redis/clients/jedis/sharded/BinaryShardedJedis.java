@@ -8,7 +8,7 @@ import java.util.regex.Pattern;
 
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisShardInfo;
-import redis.clients.jedis.commands.BinaryJedisCommands;
+import redis.clients.jedis.commandsBase.BinaryJedisCommands;
 import redis.clients.jedis.listPosition.ListPosition.LIST_POSITION;
 import redis.clients.jedis.support.Tuple;
 import redis.clients.jedis.support.params.SortingParams;

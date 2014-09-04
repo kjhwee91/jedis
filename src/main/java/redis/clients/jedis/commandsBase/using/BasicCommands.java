@@ -1,4 +1,4 @@
-package redis.clients.jedis.commands.using;
+package redis.clients.jedis.commandsBase.using;
 
 import redis.clients.jedis.support.params.DebugParams;
 
