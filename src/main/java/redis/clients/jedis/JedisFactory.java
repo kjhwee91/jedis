@@ -7,7 +7,7 @@ import org.apache.commons.pool2.impl.DefaultPooledObject;
 /**
  * PoolableObjectFactory custom impl.
  */
-class JedisFactory implements PooledObjectFactory<Jedis> {
+public class JedisFactory implements PooledObjectFactory<Jedis> {
     private final String host;
     private final int port;
     private final int timeout;

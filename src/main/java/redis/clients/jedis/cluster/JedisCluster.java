@@ -1,23 +1,22 @@
 package redis.clients.jedis.cluster;
 
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+
 import redis.clients.host.HostAndPort;
 import redis.clients.jedis.Jedis;
-import redis.clients.jedis.client.BinaryClient;
-import redis.clients.jedis.client.BinaryClient.LIST_POSITION;
 import redis.clients.jedis.commands.JedisCommands;
 import redis.clients.jedis.commands.using.BasicCommands;
 import redis.clients.jedis.handler.JedisClusterConnectionHandler;
 import redis.clients.jedis.handler.JedisSlotBasedConnectionHandler;
+import redis.clients.jedis.listPosition.ListPosition.LIST_POSITION;
 import redis.clients.jedis.pool.JedisPool;
 import redis.clients.jedis.support.ScanResult;
 import redis.clients.jedis.support.Tuple;
 import redis.clients.jedis.support.params.DebugParams;
 import redis.clients.jedis.support.params.SortingParams;
-
-import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.Set;
 
 public class JedisCluster implements JedisCommands, BasicCommands {
     public static final short HASHSLOTS = 16384;

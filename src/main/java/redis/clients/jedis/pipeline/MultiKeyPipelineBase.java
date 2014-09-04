@@ -15,7 +15,7 @@ import redis.clients.jedis.support.build.Response;
 import redis.clients.jedis.support.params.SortingParams;
 import redis.clients.jedis.support.params.ZParams;
 
-abstract class MultiKeyPipelineBase extends PipelineBase implements
+public abstract class MultiKeyPipelineBase extends PipelineBase implements
 	BasicRedisPipeline, MultiKeyBinaryRedisPipeline,
 	MultiKeyCommandsPipeline, ClusterPipeline {
 

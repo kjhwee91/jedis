@@ -66,7 +66,7 @@ public class Connection implements Closeable {
 	this.host = host;
     }
 
-    protected Connection sendCommand(final Command cmd, final String... args) {
+    public Connection sendCommand(final Command cmd, final String... args) {
 	final byte[][] bargs = new byte[args.length][];
 	for (int i = 0; i < args.length; i++) {
 	    bargs[i] = SafeEncoder.encode(args[i]);
@@ -176,7 +176,7 @@ public class Connection implements Closeable {
 		&& !socket.isOutputShutdown();
     }
 
-    protected String getStatusCodeReply() {
+    public String getStatusCodeReply() {
 	flush();
 	final byte[] resp = (byte[]) readProtocolWithCheckingBroken();
 	if (null == resp) {
@@ -240,7 +240,7 @@ public class Connection implements Closeable {
 	return broken;
     }
 
-    protected void flush() {
+    public void flush() {
 	try {
 	    outputStream.flush();
 	} catch (IOException ex) {

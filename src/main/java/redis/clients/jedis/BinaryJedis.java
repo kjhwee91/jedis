@@ -22,6 +22,7 @@ import redis.clients.jedis.commands.using.AdvancedBinaryJedisCommands;
 import redis.clients.jedis.commands.using.BasicCommands;
 import redis.clients.jedis.commands.using.BinaryScriptingCommands;
 import redis.clients.jedis.commands.using.MultiKeyBinaryCommands;
+import redis.clients.jedis.listPosition.ListPosition.LIST_POSITION;
 import redis.clients.jedis.pipeline.Pipeline;
 import redis.clients.jedis.pipeline.PipelineBlock;
 import redis.clients.jedis.pubsub.BinaryJedisPubSub;

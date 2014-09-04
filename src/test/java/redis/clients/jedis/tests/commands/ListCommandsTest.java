@@ -8,7 +8,7 @@ import org.junit.Test;
 
 import redis.clients.exceptions.JedisDataException;
 import redis.clients.jedis.Jedis;
-import redis.clients.jedis.client.Client;
+import redis.clients.jedis.listPosition.ListPosition.LIST_POSITION;
 
 public class ListCommandsTest extends JedisCommandTestBase {
     final byte[] bfoo = { 0x01, 0x02, 0x03, 0x04 };
@@ -501,12 +501,12 @@ public class ListCommandsTest extends JedisCommandTestBase {
 
     @Test
     public void linsert() {
-	long status = jedis.linsert("foo", Client.LIST_POSITION.BEFORE, "bar",
+	long status = jedis.linsert("foo", LIST_POSITION.BEFORE, "bar",
 		"car");
 	assertEquals(0, status);
 
 	jedis.lpush("foo", "a");
-	status = jedis.linsert("foo", Client.LIST_POSITION.AFTER, "a", "b");
+	status = jedis.linsert("foo", LIST_POSITION.AFTER, "a", "b");
 	assertEquals(2, status);
 
 	List<String> actual = jedis.lrange("foo", 0, 100);
@@ -517,16 +517,16 @@ public class ListCommandsTest extends JedisCommandTestBase {
 	assertEquals(expected, actual);
 
 	status = jedis
-		.linsert("foo", Client.LIST_POSITION.BEFORE, "bar", "car");
+		.linsert("foo", LIST_POSITION.BEFORE, "bar", "car");
 	assertEquals(-1, status);
 
 	// Binary
-	long bstatus = jedis.linsert(bfoo, Client.LIST_POSITION.BEFORE, bbar,
+	long bstatus = jedis.linsert(bfoo, LIST_POSITION.BEFORE, bbar,
 		bcar);
 	assertEquals(0, bstatus);
 
 	jedis.lpush(bfoo, bA);
-	bstatus = jedis.linsert(bfoo, Client.LIST_POSITION.AFTER, bA, bB);
+	bstatus = jedis.linsert(bfoo, LIST_POSITION.AFTER, bA, bB);
 	assertEquals(2, bstatus);
 
 	List<byte[]> bactual = jedis.lrange(bfoo, 0, 100);
@@ -536,7 +536,7 @@ public class ListCommandsTest extends JedisCommandTestBase {
 
 	assertEquals(bexpected, bactual);
 
-	bstatus = jedis.linsert(bfoo, Client.LIST_POSITION.BEFORE, bbar, bcar);
+	bstatus = jedis.linsert(bfoo, LIST_POSITION.BEFORE, bbar, bcar);
 	assertEquals(-1, bstatus);
 
     }

@@ -10,7 +10,7 @@ import redis.clients.jedis.support.network.Protocol;
 public class BitPosParams {
     private List<byte[]> params = new ArrayList<byte[]>();
 
-    protected BitPosParams() {
+    public BitPosParams() {
     }
 
     public BitPosParams(long start) {

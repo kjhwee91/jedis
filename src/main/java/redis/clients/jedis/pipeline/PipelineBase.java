@@ -7,9 +7,8 @@ import java.util.Map;
 import java.util.Set;
 
 import redis.clients.jedis.Jedis;
-import redis.clients.jedis.client.BinaryClient;
 import redis.clients.jedis.client.Client;
-import redis.clients.jedis.client.BinaryClient.LIST_POSITION;
+import redis.clients.jedis.listPosition.ListPosition.LIST_POSITION;
 import redis.clients.jedis.pipeline.using.BinaryRedisPipeline;
 import redis.clients.jedis.pipeline.using.RedisPipeline;
 import redis.clients.jedis.support.Tuple;
@@ -19,7 +18,7 @@ import redis.clients.jedis.support.build.Response;
 import redis.clients.jedis.support.params.BitPosParams;
 import redis.clients.jedis.support.params.SortingParams;
 
-abstract class PipelineBase extends Queable implements BinaryRedisPipeline,
+public abstract class PipelineBase extends Queable implements BinaryRedisPipeline,
 	RedisPipeline {
 
     protected abstract Client getClient(String key);

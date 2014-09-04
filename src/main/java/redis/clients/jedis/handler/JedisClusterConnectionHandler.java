@@ -16,9 +16,9 @@ public abstract class JedisClusterConnectionHandler {
     protected Map<String, JedisPool> nodes = new HashMap<String, JedisPool>();
     protected Map<Integer, JedisPool> slots = new HashMap<Integer, JedisPool>();
 
-    abstract Jedis getConnection();
+    public abstract Jedis getConnection();
 
-    protected void returnConnection(Jedis connection) {
+    public void returnConnection(Jedis connection) {
 	nodes.get(getNodeKey(connection.getClient()))
 		.returnResource(connection);
     }
@@ -28,7 +28,7 @@ public abstract class JedisClusterConnectionHandler {
 		connection);
     }
 
-    abstract Jedis getConnectionFromSlot(int slot);
+    public abstract Jedis getConnectionFromSlot(int slot);
 
     public JedisClusterConnectionHandler(Set<HostAndPort> nodes) {
 	initializeSlotsCache(nodes);

@@ -1,20 +1,29 @@
 package redis.clients.jedis;
 
-import redis.clients.jedis.client.BinaryClient;
-import redis.clients.jedis.client.BinaryClient.LIST_POSITION;
+import java.net.URI;
+import java.util.AbstractMap;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+
 import redis.clients.jedis.commands.JedisCommands;
 import redis.clients.jedis.commands.using.AdvancedJedisCommands;
 import redis.clients.jedis.commands.using.BasicCommands;
 import redis.clients.jedis.commands.using.ClusterCommands;
 import redis.clients.jedis.commands.using.MultiKeyCommands;
 import redis.clients.jedis.commands.using.ScriptingCommands;
+import redis.clients.jedis.listPosition.ListPosition.LIST_POSITION;
 import redis.clients.jedis.pubsub.JedisPubSub;
 import redis.clients.jedis.support.BitOP;
 import redis.clients.jedis.support.ScanResult;
 import redis.clients.jedis.support.Tuple;
 import redis.clients.jedis.support.build.BuilderFactory;
 import redis.clients.jedis.support.network.Protocol;
-import redis.clients.jedis.support.network.Protocol.Command;
 import redis.clients.jedis.support.params.BitPosParams;
 import redis.clients.jedis.support.params.ScanParams;
 import redis.clients.jedis.support.params.SortingParams;
@@ -22,10 +31,6 @@ import redis.clients.jedis.support.params.ZParams;
 import redis.clients.util.Pool;
 import redis.clients.util.SafeEncoder;
 import redis.clients.util.Slowlog;
-
-import java.net.URI;
-import java.util.*;
-import java.util.Map.Entry;
 
 public class Jedis extends BinaryJedis implements JedisCommands,
 	MultiKeyCommands, AdvancedJedisCommands, ScriptingCommands,
@@ -2845,7 +2850,7 @@ public class Jedis extends BinaryJedis implements JedisCommands,
 	client.rollbackTimeout();
     }
 
-    protected static String[] getParams(List<String> keys, List<String> args) {
+    public static String[] getParams(List<String> keys, List<String> args) {
 	int keyCount = keys.size();
 	int argCount = args.size();
 

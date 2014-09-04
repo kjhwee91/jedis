@@ -4,8 +4,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import redis.clients.jedis.client.BinaryClient;
-import redis.clients.jedis.client.BinaryClient.LIST_POSITION;
+import redis.clients.jedis.listPosition.ListPosition.LIST_POSITION;
 import redis.clients.jedis.support.Tuple;
 import redis.clients.jedis.support.build.Response;
 import redis.clients.jedis.support.params.SortingParams;
@@ -72,7 +71,7 @@ public interface BinaryRedisPipeline {
 
     Response<byte[]> lindex(byte[] key, long index);
 
-    Response<Long> linsert(byte[] key, BinaryClient.LIST_POSITION where,
+    Response<Long> linsert(byte[] key, LIST_POSITION where,
 	    byte[] pivot, byte[] value);
 
     Response<Long> llen(byte[] key);

@@ -1,23 +1,20 @@
 package redis.clients.jedis.sharded;
 
 import java.io.Closeable;
-
-import redis.clients.jedis.Jedis;
-import redis.clients.jedis.JedisShardInfo;
-import redis.clients.jedis.client.BinaryClient;
-import redis.clients.jedis.client.BinaryClient.LIST_POSITION;
-import redis.clients.jedis.commands.JedisCommands;
-import redis.clients.jedis.support.ScanResult;
-import redis.clients.jedis.support.Tuple;
-import redis.clients.jedis.support.params.SortingParams;
-import redis.clients.util.Hashing;
-
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 import java.util.regex.Pattern;
 
+import redis.clients.jedis.Jedis;
+import redis.clients.jedis.JedisShardInfo;
+import redis.clients.jedis.commands.JedisCommands;
+import redis.clients.jedis.listPosition.ListPosition.LIST_POSITION;
+import redis.clients.jedis.support.ScanResult;
+import redis.clients.jedis.support.Tuple;
+import redis.clients.jedis.support.params.SortingParams;
+import redis.clients.util.Hashing;
 import redis.clients.util.Pool;
 
 public class ShardedJedis extends BinaryShardedJedis implements JedisCommands,

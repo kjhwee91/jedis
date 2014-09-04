@@ -16,6 +16,7 @@ public class JedisRandomConnectionHandler extends JedisClusterConnectionHandler 
     }
 
     @Override
+	public
     Jedis getConnectionFromSlot(int slot) {
 	return getRandomConnection().getResource();
     }
