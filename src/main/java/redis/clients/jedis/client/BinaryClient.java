@@ -1,35 +1,36 @@
 package redis.clients.jedis.client;
 
-import redis.clients.jedis.support.BitOP;
-import redis.clients.jedis.support.network.Connection;
-import redis.clients.jedis.support.network.Protocol;
-import redis.clients.jedis.support.network.Protocol.Command;
-import redis.clients.jedis.support.params.BitPosParams;
-import redis.clients.jedis.support.params.DebugParams;
-import redis.clients.jedis.support.params.ScanParams;
-import redis.clients.jedis.support.params.SortingParams;
-import redis.clients.jedis.support.params.ZParams;
-import redis.clients.util.SafeEncoder;
+import static redis.clients.jedis.support.network.Protocol.toByteArray;
+import static redis.clients.jedis.support.network.Protocol.Command.*;
+import static redis.clients.jedis.support.network.Protocol.Keyword.ENCODING;
+import static redis.clients.jedis.support.network.Protocol.Keyword.IDLETIME;
+import static redis.clients.jedis.support.network.Protocol.Keyword.LEN;
+import static redis.clients.jedis.support.network.Protocol.Keyword.LIMIT;
+import static redis.clients.jedis.support.network.Protocol.Keyword.NO;
+import static redis.clients.jedis.support.network.Protocol.Keyword.ONE;
+import static redis.clients.jedis.support.network.Protocol.Keyword.REFCOUNT;
+import static redis.clients.jedis.support.network.Protocol.Keyword.RESET;
+import static redis.clients.jedis.support.network.Protocol.Keyword.STORE;
+import static redis.clients.jedis.support.network.Protocol.Keyword.WITHSCORES;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import static redis.clients.jedis.support.network.Protocol.toByteArray;
-import static redis.clients.jedis.support.network.Protocol.Command.*;
-import static redis.clients.jedis.support.network.Protocol.Keyword.*;
+import redis.clients.jedis.listPosition.ListPosition.LIST_POSITION;
+import redis.clients.jedis.support.BitOP;
+import redis.clients.jedis.support.network.Connection;
+import redis.clients.jedis.support.network.Protocol;
+import redis.clients.jedis.support.network.Protocol.Command;
+import redis.clients.jedis.support.network.Protocol.Keyword;
+import redis.clients.jedis.support.params.BitPosParams;
+import redis.clients.jedis.support.params.DebugParams;
+import redis.clients.jedis.support.params.ScanParams;
+import redis.clients.jedis.support.params.SortingParams;
+import redis.clients.jedis.support.params.ZParams;
 
 public class BinaryClient extends Connection {
-	public enum LIST_POSITION {
-		BEFORE, AFTER;
-		public final byte[] raw;
-
-		private LIST_POSITION() {
-			raw = SafeEncoder.encode(name());
-		}
-	}
-
 	private boolean isInMulti;
 
 	private String password;

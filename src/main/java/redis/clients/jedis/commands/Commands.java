@@ -2,7 +2,7 @@ package redis.clients.jedis.commands;
 
 import java.util.Map;
 
-import redis.clients.jedis.client.BinaryClient.LIST_POSITION;
+import redis.clients.jedis.listPosition.ListPosition.LIST_POSITION;
 import redis.clients.jedis.support.BitOP;
 import redis.clients.jedis.support.params.ScanParams;
 import redis.clients.jedis.support.params.SortingParams;

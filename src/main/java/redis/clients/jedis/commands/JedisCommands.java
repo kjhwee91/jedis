@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import redis.clients.jedis.client.Client;
+import redis.clients.jedis.listPosition.ListPosition.LIST_POSITION;
 import redis.clients.jedis.support.ScanResult;
 import redis.clients.jedis.support.Tuple;
 import redis.clients.jedis.support.params.SortingParams;
@@ -200,7 +200,7 @@ public interface JedisCommands {
 
     Long zremrangeByScore(String key, String start, String end);
 
-    Long linsert(String key, Client.LIST_POSITION where, String pivot,
+    Long linsert(String key, LIST_POSITION where, String pivot,
 	    String value);
 
     Long lpushx(String key, String... string);

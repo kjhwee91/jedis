@@ -9,6 +9,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 import redis.clients.jedis.commands.Commands;
+import redis.clients.jedis.listPosition.ListPosition.LIST_POSITION;
 import redis.clients.jedis.support.BitOP;
 import redis.clients.jedis.support.network.Protocol;
 import redis.clients.jedis.support.params.BitPosParams;
