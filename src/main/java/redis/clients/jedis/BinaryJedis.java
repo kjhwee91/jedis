@@ -22,6 +22,7 @@ import redis.clients.jedis.commands.using.AdvancedBinaryJedisCommands;
 import redis.clients.jedis.commands.using.BasicCommands;
 import redis.clients.jedis.commands.using.BinaryScriptingCommands;
 import redis.clients.jedis.commands.using.MultiKeyBinaryCommands;
+import redis.clients.jedis.jedisParam.JedisParam;
 import redis.clients.jedis.listPosition.ListPosition.LIST_POSITION;
 import redis.clients.jedis.pipeline.Pipeline;
 import redis.clients.jedis.pipeline.PipelineBlock;
@@ -3277,22 +3278,8 @@ public class BinaryJedis implements BasicCommands, BinaryJedisCommands,
      */
     public Object eval(byte[] script, List<byte[]> keys, List<byte[]> args) {
 	client.setTimeoutInfinite();
-	client.eval(script, toByteArray(keys.size()), getParams(keys, args));
+	client.eval(script, toByteArray(keys.size()), JedisParam.getParams(keys, args));
 	return client.getOne();
-    }
-
-    private byte[][] getParams(List<byte[]> keys, List<byte[]> args) {
-	int keyCount = keys.size();
-	int argCount = args.size();
-	byte[][] params = new byte[keyCount + args.size()][];
-
-	for (int i = 0; i < keyCount; i++)
-	    params[i] = keys.get(i);
-
-	for (int i = 0; i < argCount; i++)
-	    params[keyCount + i] = args.get(i);
-
-	return params;
     }
 
     public Object eval(byte[] script, byte[] keyCount, byte[]... params) {

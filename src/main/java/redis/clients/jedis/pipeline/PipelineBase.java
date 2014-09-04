@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import redis.clients.jedis.Jedis;
 import redis.clients.jedis.client.Client;
+import redis.clients.jedis.jedisParam.JedisParam;
 import redis.clients.jedis.listPosition.ListPosition.LIST_POSITION;
 import redis.clients.jedis.pipeline.using.BinaryRedisPipeline;
 import redis.clients.jedis.pipeline.using.RedisPipeline;
@@ -1208,7 +1208,7 @@ public abstract class PipelineBase extends Queable implements BinaryRedisPipelin
 
     public Response<String> eval(String script, List<String> keys,
 	    List<String> args) {
-	String[] argv = Jedis.getParams(keys, args);
+	String[] argv = JedisParam.getParams(keys, args);
 	return this.eval(script, keys.size(), argv);
     }
 
@@ -1223,7 +1223,7 @@ public abstract class PipelineBase extends Queable implements BinaryRedisPipelin
 
     public Response<String> evalsha(String sha1, List<String> keys,
 	    List<String> args) {
-	String[] argv = Jedis.getParams(keys, args);
+	String[] argv = JedisParam.getParams(keys, args);
 	return this.evalsha(sha1, keys.size(), argv);
     }
 
