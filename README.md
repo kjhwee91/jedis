@@ -1,6 +1,6 @@
 # 결과 보고서
 [http://www.slideshare.net/kjhwee91/jedis](http://www.slideshare.net/kjhwee91/jedis)<br>
-[ps.소개된 곳 :)](http://news.imaso.co.kr/127491)
+ps.소개된 곳 :)[http://news.imaso.co.kr/127491](http://news.imaso.co.kr/127491)
 
 # Jedis
 
